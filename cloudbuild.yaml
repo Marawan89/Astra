@@ -1,5 +1,5 @@
 steps:
 - name: 'gcr.io/cloud-builders/gcloud'
-  args: ['builds', 'submit', '--tag', 'gcr.io/var.project_id/astraimage']
+  args: ['builds', 'submit', '--tag', 'gcr.io/astracloud/astraimage']
 - name: 'gcr.io/cloud-builders/gcloud'
-  args: ['run', 'deploy', 'astracloud', '--image', 'gcr.io/var.project_id/astraimage', '--region', 'asia-east1']
+  args: ['run', 'deploy', 'astracloud', '--image', 'gcr.io/astracloud/astraimage', '--region', 'asia-east1']
